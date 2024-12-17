@@ -1,0 +1,372 @@
+/* Sticky Navigation Bar for Desktops and Larger Screens */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 0px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.nav-profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+}
+
+.social-icons a {
+    color: #a7a7a7;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+/* Bottom Border Under Icons */
+.bottom-border {
+    width: 100%;
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.nav-links li {
+    margin: 15px 30px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 8px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #dfdfdf;
+}
+
+/* Content Sections */
+.content-section {
+    margin-left: 320px;
+    padding: 0px;
+    background-color: #f4f4f4;
+    /*min-height: 100vh;*/
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+
+    /* Adjust content margin for smaller screens */
+    .content-section {
+        margin-left: 0;
+        margin-top: 0px;
+        /* Add space below top navbar */
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .content-section {
+        padding: 0px;
+    }
+}
+
+
+/* About Section */
+
+.about-section {
+    background-color: #5A6D7C;
+    /* Cool, neutral background color */
+    color: #FFFFFF;
+    /* White text for contrast */
+    padding: 100px 50px 10px 10px;
+    /* Top and bottom padding for spacing */
+}
+
+.about-title {
+    font-size: 2.5rem;
+    /* Adjust font size for heading */
+    font-weight: 700;
+    /* Bold heading */
+    text-transform: uppercase;
+    /* Uppercase styling */
+    line-height: 1.3;
+    /* Proper spacing */
+}
+
+.about-text {
+    font-size: 1.25rem;
+    /* Slightly larger text for readability */
+    line-height: 1.8;
+    /* Better line spacing for paragraphs */
+    color: #E0E0E0;
+    /* Lighter text color for better readability */
+}
+
+.contact-btn {
+    text-transform: uppercase;
+    border-radius: 25px;
+    /* Rounded button */
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #ffffff;
+    /* White background */
+    color: #5A6D7C;
+    /* Button text matches background */
+    border-color: #ffffff;
+    /* Border remains white */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 1.7rem;
+        /* Smaller font size on tablets */
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+        /* Adjust text size for smaller screens */
+    }
+
+    .about-section {
+        padding: 70px 0;
+        /* Reduce padding for smaller screens */
+        padding-bottom: 20px;
+    }
+
+    /* Bottom Border Under Icons */
+
+}
+
+.ruler {
+    padding: 0px;
+    margin: 0px;
+    color: #323c44;
+}
+
+
+/* Projects Section */
+
+.projects-section {
+    background-color: #5A6D7C;
+    /* Cool background color */
+    color: #FFFFFF;
+    /* White text */
+
+}
+
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #E0E0E0;
+    /* Lighter text for readability */
+}
+
+.project-image {
+    border: 5px solid #FFFFFF;
+    /* Optional white border */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+}
+
+/* Button Styles */
+.btn-outline-light {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #5A6D7C;
+    /* Match background color */
+    border-color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 2560px) {
+    .margin-right {
+        margin-right: 10px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .margin-right {
+        margin-right: 0px;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .projects-section {
+        padding: 50px 0;
+    }
+}
+
+
+/* Skills Section */
+/* Skills Section Custom Styling */
+#skills {
+    background-color: #37474F;
+    /* Cool dark gray background */
+}
+
+.card {
+    /*transition: transform 0.3s ease-in-out;
+    box-shadow 0.3s ease-in-out;*/
+    border-radius: 1px;
+}
+
+/*.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}*/
+
+.card i {
+    color: #ffd90000;
+    /* Gold color for icons */
+    height: 100px;
+    width: 100px;
+}
+
+
+/* Contact Me Styling */
+
+/* Contact Me Section Styling */
+#contact {
+    background-color: #37474F;
+    /* Match dark theme */
+    margin-bottom: 0px;
+}
+
+#contact h2 {
+    color: #FFFFFF;
+}
+
+#contact p {
+    color: #cecece;
+    /* Light gray for readability */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact h5 {
+    color: #ffffff;
+    /* Gold color for headings */
+}
+
+#contact a {
+    transition: color 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+#contact a:hover {
+    color: #bdbdbd;
+    /* Hover effect for links and icons */
+}
+
+#contact i {
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact i:hover {
+    transform: scale(1.2);
+    /* Slight scale effect on hover */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    /* Dark gray background */
+    font-size: 0.9rem;
+    /* Small font size */
+}
+
+span {
+    color: #6a7e8d;
+}
+
+footer a {
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #bdbdbd;
+    /* Gold color on hover */
+}
